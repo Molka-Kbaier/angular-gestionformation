@@ -33,11 +33,10 @@
             
              <!-- Boutons d'action pour chaque formation -->
              <td>
-                 <a   class="btn btn-outline-primary">
-                     <i class="fas fa-edit"></i> participate
-                 </a>
-                
-             </td>
+                <button class="btn btn-outline-primary" (click)="participate(formation.id, userId)">
+                  <i class="fas fa-edit"></i> Participer
+                </button>
+              </td>
              
          </tr>
      </tbody>

@@ -47,5 +47,7 @@ export class FormationService {
   searchFormationsByTitle(titre: string): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}/searchFormationsByTitle/${titre}`);
   }
-  
+  participateInFormation(formationId: number, userId: number): Observable<any> {
+    return this.http.post(`${this.apiUrl}/participate/${formationId}/${userId}`, {});
+  }
 }
